@@ -11,6 +11,10 @@ import iview from 'iview'
 import 'iview/dist/styles/iview.css'
 Vue.use(iview)
 
+console.log(process.env.NODE_ENV)
+console.log(process.env.VUE_APP_TITLE)
+console.log(process.env.VUE_APP_URL)
+
 Vue.config.productionTip = false
 
 // 中央事件总线，用于兄弟组件通信

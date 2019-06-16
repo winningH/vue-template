@@ -7,7 +7,7 @@
  */
 
 import instance from './config'
-const baseUrl = process.env.USUAL_URL
+const baseUrl = process.env.VUE_APP_URL
 
 // 用户登入信息获取接口
 export const Login = () => {
