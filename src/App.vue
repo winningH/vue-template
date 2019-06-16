@@ -15,6 +15,7 @@
 #nav {
   padding: 30px;
   a {
+    font-size: 20px;
     font-weight: bold;
     &.router-link-exact-active {
       color: #42b983;
