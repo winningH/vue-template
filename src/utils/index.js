@@ -57,6 +57,7 @@ export const getSuffix = filename => {
   return filename.substring(index + 1)
 }
 
+// 附件下载
 export const fileDownload = url => {
   const aTag = document.createElement('a');
   aTag.setAttribute('href', url)
@@ -68,6 +69,7 @@ export const fileDownload = url => {
   }, 500)
 }
 
+// 将Object 转 Formdata
 export const objectToFormData = (obj, form, namespace) => {
   const fd = form || new FormData();
   let formKey;
