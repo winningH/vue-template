@@ -16,6 +16,10 @@ Vue.config.productionTip = false
 // 中央事件总线，用于兄弟组件通信
 window.eventHub = new Vue() 
 
+// 引入全局注册的组件
+import MyComponents from 'comp'
+Vue.use(MyComponents)
+
 new Vue({
   router,
   store,

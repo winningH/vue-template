@@ -11,7 +11,7 @@ module.exports = {
   // 配置路径别名
   chainWebpack: config => {
     config.resolve.alias
-      .set('comp', resolve('examples/components'))
+      .set('comp', resolve('src/components'))
   },
 
   devServer: {
