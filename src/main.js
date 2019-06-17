@@ -11,9 +11,10 @@ import iview from 'iview'
 import 'iview/dist/styles/iview.css'
 Vue.use(iview)
 
-console.log(process.env.NODE_ENV)
-console.log(process.env.VUE_APP_TITLE)
-console.log(process.env.VUE_APP_URL)
+// 测试 配置不同环境的打包命令 是否成功
+// console.log(process.env.NODE_ENV)
+// console.log(process.env.VUE_APP_TITLE)
+// console.log(process.env.VUE_APP_URL)
 
 Vue.config.productionTip = false
 
