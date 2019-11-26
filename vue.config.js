@@ -11,11 +11,20 @@ module.exports = {
   // 配置路径别名
   chainWebpack: config => {
     config.resolve.alias
-      .set('comp', resolve('src/components'))
+      .set('@comp', resolve('src/components'))
   },
 
   devServer: {
     port: 2019,
-    host: 'localhost'
+    host: 'localhost',
+    proxy: {
+      '/api': {
+        target: '',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': ''
+        }
+      }
+    }
   }
 }
