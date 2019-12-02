@@ -15,11 +15,11 @@ module.exports = {
   },
 
   devServer: {
-    port: 2019,
+    port: new Date().getFullYear(),
     host: 'localhost',
     proxy: {
       '/api': {
-        target: '',
+        target: 'http://www.baidu.com',
         changeOrigin: true,
         pathRewrite: {
           '^/api': ''
